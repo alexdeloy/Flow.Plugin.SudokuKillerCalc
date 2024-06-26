@@ -1,0 +1,12 @@
+{
+  "ID": "F32C0CF0270944AFAC9298BB67E16293",
+  "ActionKeyword": "sk",
+  "Name": "Killer Sudoku Calculator",
+  "Description": "Calculates the combinations for a sudoku killer cage",
+  "Author": "ap",
+  "Version": "1.0.0",
+  "Language": "python",
+  "Website": "https://github.com/alexdeloy",
+  "IcoPath": "./icon-search.png",
+  "ExecuteFileName": "main.py"
+}
