@@ -16,9 +16,9 @@ jobs:
       python_ver: 3.8
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@release
       - name: Set up Python ${{ matrix.python-version }}
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@release
         with:
           python-version: ${{ matrix.python-version }}
       - name: get version
@@ -35,7 +35,7 @@ jobs:
           zip -r Flow.Plugin.SudokuKillerCalc.zip . -x '*.git*'
       - name: Publish
         if: success()
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@release
         with:
           files: 'Flow.Plugin.SudokuKillerCalc.zip'
           tag_name: "v${{steps.version.outputs.prop}}"
